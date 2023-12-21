@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom"
 
-const Illnesses = (props) => {
+const Procedures = (props) => {
     const navigate = useNavigate()
     const [newForm, setNewForm] = useState({
         name: "",
-        symptoms: "",
+        cost: "",
         description: "",
         image: ""
       });
@@ -16,20 +16,20 @@ const Illnesses = (props) => {
 
       const handleSubmit = (event) => {
         event.preventDefault()
-        props.createIllness(newForm)
+        props.createProcedure(newForm)
         setNewForm({
             name: "",
-            symptoms: "",
+            cost: "",
             description: "",
             image: ""
         })
-        navigate("/illnesses")
+        navigate("/procedures")
       }
 
     const loaded = () => {
-        return props.illnesses.map((illness) => (
-            <div className="illnesses">
-                <Link to={`/illnesses/${illness._id}`}><h3>{illness.name}</h3></Link>
+        return props.procedures.map((procedure) => (
+            <div className="procedures">
+                <Link to={`/procedures/${procedure._id}`}><h3>{procedure.name}</h3></Link>
             </div>
         ));
     }
@@ -40,7 +40,7 @@ const Illnesses = (props) => {
 
     return (
         <section>
-        {props.illnesses ? loaded() : loading()}
+        {props.procedures ? loaded() : loading()}
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -51,9 +51,9 @@ const Illnesses = (props) => {
           /> <br/>
           <input
             type="text"
-            value={newForm.symptoms}
-            name="symptoms"
-            placeholder="symptoms"
+            value={newForm.cost}
+            name="cost"
+            placeholder="cost"
             onChange={handleChange}
           /> <br/>
           <input
@@ -70,10 +70,10 @@ const Illnesses = (props) => {
             placeholder="image URL"
             onChange={handleChange}
           /> <br/>
-          <input type="submit" value="Add Illness" />
+          <input type="submit" value="Add Procedure" />
         </form>
       </section>
     )
 }
 
-export default Illnesses
+export default Procedures

@@ -1,14 +1,14 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-const Illness = (props) => {
+const Procedure = (props) => {
     const params = useParams()
     const navigate = useNavigate()
     const id = params.id
-    const illnesses = props.illnesses
-    const illness = illnesses.find((illness) => illness._id === id)
+    const procedures = props.procedures
+    const procedure = procedures.find((procedure) => procedure._id === id)
 
-    const [editForm, setEditForm] = useState(illness)
+    const [editForm, setEditForm] = useState(procedure)
 
     const handleChange = (event) => {
         setEditForm({...editForm, [event.target.name]: event.target.value})
@@ -16,23 +16,23 @@ const Illness = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        props.updateIllness(editForm, illness._id)
-        navigate(`/illnesses/${id}`)
+        props.updateProcedure(editForm, procedure._id)
+        navigate(`/procedures/${id}`)
     }
 
-    const removeIllness = (event) => {
+    const removeProcedure = (event) => {
         event.preventDefault()
-        props.deleteIllness(illness._id)
-        navigate("/illnesses")
+        props.deleteProcedure(procedure._id)
+        navigate("/procedures")
     }
 
     return (
-        <div className="illness">
-            <h1>{illness.name}</h1>
-            {/* <h2>{illness.symptoms}</h2>
-            <p>{illness.description}</p> */}
-            <img src={illness.image}/> <br/>
-            <button className="delete" onClick={removeIllness}>
+        <div className="procedure">
+            <h1>{procedure.name}</h1>
+            {/* <h2>{procedure.cost}</h2>
+            <p>{procedure.description}</p>
+            <img src={procedure.image}/> */} <br/>
+            <button className="delete" onClick={removeProcedure}>
                 Delete
             </button> <br/>
             <form onSubmit={handleSubmit} className="editform">
@@ -45,9 +45,9 @@ const Illness = (props) => {
               /> <br/>
               <input
                   type="text"
-                  value={editForm.symptoms}
-                  name="symptoms"
-                  placeholder="symptoms"
+                  value={editForm.cost}
+                  name="cost"
+                  placeholder="cost"
                   onChange={handleChange}
               /> <br/>
               <input
@@ -64,10 +64,10 @@ const Illness = (props) => {
                   placeholder="image URL"
                   onChange={handleChange}
               /> <br/>
-              <input type="submit" value="Update Illness" />
+              <input type="submit" value="Update Procedure" />
           </form>
         </div>
     )
 }
 
-export default Illness
+export default Procedure
