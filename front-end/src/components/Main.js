@@ -6,9 +6,14 @@ import Procedure from "../pages/Procedure";
 import Procedures from "../pages/Procedures";
 import About from '../pages/About';
 import Home from '../pages/Home';
-import "./Main.css"
+import CreateIllness from "../pages/createIllness";
+import EditIllness from "../pages/EditIllness";
+import CreateProcedure from "../pages/createProcedure";
+import EditProcedure from "../pages/editProcedure";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 
-const Main = (props) => {
+const Main = () => {
     const [illnesses, setIllnesses] = useState(null)
     const [procedures, setProcedures] = useState(null)
 
@@ -94,12 +99,18 @@ const Main = (props) => {
     return (
         <main>
             <Routes>
-                <Route path="/illnesses" element={<Illnesses illnesses={illnesses} createIllness={createIllness} />} />
-                <Route path="/procedures" element={<Procedures procedures={procedures} createProcedure={createProcedure} />} />
-                <Route path="/illnesses/:id" element={<Illness illnesses={illnesses} updateIllness={updateIllness} deleteIllness={deleteIllness} />} />
-                <Route path="/procedures/:id" element={<Procedure procedures={procedures} updateProcedure={updateProcedure} deleteProcedure={deleteProcedure} />} />
+                <Route path="/illness" element={<Illnesses illnesses={illnesses} />} />
+                <Route path="/procedure" element={<Procedures procedures={procedures} />} />
+                <Route path="/illness/:id" element={<Illness illnesses={illnesses} />} />
+                <Route path="/procedure/:id" element={<Procedure procedures={procedures} />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/home" element={<Home />} />
+                <Route path="/auth/login" element={<Login />} />
+                <Route path="/auth/register" element={<Register />} />
+                <Route path="/illness/create" element={<CreateIllness illnesses={illnesses} createIllness={createIllness} />} />
+                <Route path="/procedure/create" element={<CreateProcedure procedures={procedures} createProcedure={createProcedure} />} />
+                <Route path="/illness/:id/edit" element={<EditIllness illnesses={illnesses} updateIllness={updateIllness} deleteIllness={deleteIllness} />} />
+                <Route path="/procedure/:id/edit" element={<EditProcedure procedures={procedures} updateProcedure={updateProcedure} deleteProcedure={deleteProcedure} />} />
             </Routes>
         </main>
     )

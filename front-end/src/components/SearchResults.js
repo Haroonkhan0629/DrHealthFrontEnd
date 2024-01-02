@@ -1,8 +1,7 @@
 import React from "react"
 import SearchResult from "./SearchResult"
-import "./SearchResults.css"
 
-const SearchResults = ({results}) => {
+const SearchResults = ({ results }) => {
     return (
         <div className="results">
             {

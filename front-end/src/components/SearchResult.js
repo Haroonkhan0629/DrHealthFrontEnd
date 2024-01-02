@@ -1,8 +1,12 @@
 import React from "react"
-import "./SearchResult.css"
+import { Link } from "react-router-dom";
 
-const SearchResult = ({result}) => {
-    return <div className="result" onClick={(event) => alert(`you clicked on ${result.name}`)}>{result.name}</div>
+const SearchResult = ({ result }) => {
+    return (
+        <div className="result" >
+            <Link to={`/illness/${result._id}`} className="result-link"><div>{result.name}</div></Link>
+        </div>
+    )
 }
 
 export default SearchResult
