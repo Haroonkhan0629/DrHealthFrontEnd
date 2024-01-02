@@ -1,13 +1,168 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body {
+  background-image: url("https://www.wallpapertip.com/wmimgs/11-119918_background-for-hospital-website.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.search-bar-container {
+  padding-top: 20vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-wrapper {
+  background-color: white;
+  max-width: 100%;
+  border-radius: 10px;
+  height: 2.5rem;
+  padding: 0 15px;
+  box-shadow: 0px 0px 8px rgb(198, 197, 197);
+  display: flex;
+  align-items: center;
+}
+
+.results {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 px 0px 8px rgb(198, 197, 197);
+  border-radius: 10px;
+  margin-top: .25rem;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.result {
+  padding: 10px 20px;
+}
+
+.result:hover {
+  background-color: rgb(146, 144, 144);
+}
+
+.result-link {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  background-color: rgb(111, 31, 31);;
+  padding: 5px 10px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: whitesmoke;
+  box-shadow: 0px 0px 8px rgb(198, 197, 197);
+}
+
+.navigation {
+  background-color: rgb(111, 31, 31);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.nav,
+.navlink {
+  display: flex;
+  padding: 8px;
+  background-color: #dddddd;
+  text-decoration: none;
+  background-color: rgb(111, 31, 31);
+  color: whitesmoke;
+}
+
+.navheader,
+.navlinkheader {
+  display: flex;
+  padding: 8px;
+  background-color: #dddddd;
+  text-decoration: none;
+  background-color: rgb(111, 31, 31);
+  color: whitesmoke;
+}
+
+.nav,
+.navlink:hover {
+  background-color: white;
+  color: black;
+}
+
+.items {
+  column-count: 3;
+  margin-bottom: 50px;
+}
+
+.item {
+  margin: 50px;
+  background-color: rgb(96, 94, 94);
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgb(198, 197, 197);
+  max-width: 125px;
+}
+
+.item-link {
+  list-style: none;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.item-link:hover {
+  text-decoration: underline;
+}
+
+.item-heading {
+  margin-bottom: 50px;
+  font-size: xx-large;
+}
+
+input[type=text],
+select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.form-heading {
+  margin-bottom: 50px;
 }
