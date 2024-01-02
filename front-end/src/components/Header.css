@@ -1,0 +1,38 @@
+/* Header.css */
+
+.nav {
+    /* Styles for the overall header */
+    background: #e4eeff;
+    font-weight: bold;
+    padding: 20px 0;
+    color: #3a76e4;
+    font-family: Montserrat;
+    color: #3a76e4;
+  }
+  
+  /* Styles for the container */
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between;
+  }
+  
+  /* Styles for the links container */
+  .nav-links-container {
+    display: flex;
+  }
+  
+  /* Styles for individual links */
+  .navlink {
+    text-decoration: none;
+    color: #3a76e4;
+    margin-right: 20px; /* Add some spacing between links */
+  }
+  
+  /* Style the links on hover */
+  .navlink:hover {
+    text-decoration: underline;
+  }
+  

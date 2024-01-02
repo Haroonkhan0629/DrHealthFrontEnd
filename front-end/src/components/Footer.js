@@ -14,7 +14,7 @@ const Footer = () => {
                 <ul style={linkList}>
                   <li><a href="#about">About Us</a></li>
                   <li><a href="#services">Ilnesses</a></li>
-                  <li><a href="#destinations">Destinations</a></li>
+                  <li><a href="#destinations">Procedures</a></li>
                   <li><a href="#contact">Contact Us</a></li>
                 </ul>
               </div>
