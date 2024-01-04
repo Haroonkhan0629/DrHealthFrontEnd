@@ -33,28 +33,28 @@ const CreateProcedure = (props) => {
                     type="text"
                     value={newForm.name}
                     name="name"
-                    placeholder="name"
+                    placeholder="Name"
                     onChange={handleChange}
                 /> <br />
                 <input
                     type="text"
                     value={newForm.cost}
                     name="cost"
-                    placeholder="cost"
+                    placeholder="Cost"
                     onChange={handleChange}
                 /> <br />
                 <input
                     type="text"
                     value={newForm.description}
                     name="description"
-                    placeholder="description"
+                    placeholder="Description"
                     onChange={handleChange}
                 /> <br />
                 <input
                     type="text"
                     value={newForm.image}
                     name="image"
-                    placeholder="image URL"
+                    placeholder="Image URL"
                     onChange={handleChange}
                 /> <br />
                 <input type="submit" className="button" value="Create" /> <br />

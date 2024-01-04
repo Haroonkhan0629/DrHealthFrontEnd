@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Procedures = (props) => {
     const loaded = () => {
@@ -17,7 +18,11 @@ const Procedures = (props) => {
     }
 
     const loading = () => {
-        return <h1>Loading...</h1>
+        return (
+            <div className="loader">
+                <ClipLoader />
+            </div>
+        )
     };
 
     return (

@@ -5,7 +5,7 @@ const SearchBar2 = ({setResults2}) => {
     const [input, setInput] = useState("")
 
     const fetchData = async (searchedValue) => {
-        const response = await fetch("http://localhost:4000/test/")
+        const response = await fetch("https://drhealthbackend.onrender.com/procedure")
         const data = await response.json()
         const results = data.data.filter((result) => {
             return searchedValue && 

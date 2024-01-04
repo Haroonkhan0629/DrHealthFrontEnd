@@ -10,11 +10,12 @@ code {
 }
 
 body {
-  background-image: url("https://www.wallpapertip.com/wmimgs/11-119918_background-for-hospital-website.png");
+  background-image: url("http://cdn.wallpapersafari.com/31/2/lvkwE1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  text-align: center;
 }
 
 
@@ -122,6 +123,7 @@ body {
 .navlink:hover {
   background-color: white;
   color: black;
+  border-radius: 10px;
 }
 
 .items {
@@ -131,10 +133,10 @@ body {
 
 .item {
   margin: 50px;
-  background-color: rgb(96, 94, 94);
+  background-color: rgb(92, 90, 90);
   border-radius: 10px;
-  box-shadow: 5px 5px 30px rgb(198, 197, 197);
-  max-width: 125px;
+  box-shadow: 5px 5px 30px rgb(13, 13, 13);
+  max-width: 200px;
 }
 
 .item-link {
@@ -161,8 +163,59 @@ select {
   border: 1px solid #ccc;
   border-radius: 10px;
   box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgb(198, 197, 197);
 }
 
 .form-heading {
   margin-bottom: 50px;
+  color: whitesmoke;
 }
+
+.item-heading,
+h2,
+p {
+  color: whitesmoke;
+  margin-bottom: 50px;
+}
+
+img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+p {
+  max-width: 500px;
+  margin: 0 auto; 
+}
+
+.footer {
+  margin-top: 300px;
+  background-color: rgb(111, 31, 31);
+  color: whitesmoke;
+  max-width: 1500px;
+}
+
+.button {
+  margin-top: 50px;
+}
+
+h4 {
+  color: whitesmoke;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+h4:hover {
+  text-decoration: underline;
+}
+
+.loader {
+  margin: 100px 0px 100px 0px;
+  transform: scale(2);
+}
+
+/* @media (min-width: 320px) and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
+} */

@@ -10,8 +10,8 @@ const Illness = (props) => {
         <div>
             <h1 className="item-heading">{illness.name}</h1>
             <div>
-                {/* <h2>{illness.symptoms}</h2>
-            <p>{illness.description}</p> */}
+                <h2>Symptoms: {illness.symptoms}</h2>
+                <p>{illness.description}</p>
                 <img src={illness.image} /> <br />
                 <Link to={`/illness/${illness._id}/edit`} className="button">Edit</Link> <br />
                 <Link to="/illness" className="button">Back</Link>
