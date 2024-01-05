@@ -35,7 +35,7 @@ const Register = (props) => {
                     onChange={handleChange}
                 /> <br />
                 <input
-                    type="text"
+                    type="password"
                     value={newForm.password}
                     name="password"
                     placeholder="Password"

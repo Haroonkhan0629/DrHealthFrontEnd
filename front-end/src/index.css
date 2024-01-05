@@ -44,10 +44,10 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 px 0px 8px rgb(198, 197, 197);
+  box-shadow: 0px 0px 8px rgb(198, 197, 197);
   border-radius: 10px;
   margin-top: .25rem;
-  max-height: 250px;
+  max-height: 200px;
   overflow-y: scroll;
 }
 
@@ -189,10 +189,10 @@ p {
 }
 
 .footer {
-  margin-top: 300px;
+  margin-top: 250px;
   background-color: rgb(111, 31, 31);
   color: whitesmoke;
-  max-width: 1500px;
+  transform: scale(1.25);
 }
 
 .button {
@@ -214,8 +214,11 @@ h4:hover {
   transform: scale(2);
 }
 
-/* @media (min-width: 320px) and (max-width: 600px) {
-  body {
-    background-color: black;
+/* @media screen and (max-device-width: 600px) {
+  .media {
+    max-width: 300px;
+  }
+  .media-txt {
+    font-size: medium;
   }
 } */
