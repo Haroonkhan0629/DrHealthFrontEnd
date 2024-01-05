@@ -18,8 +18,8 @@ const Main = () => {
     const [procedures, setProcedures] = useState(null)
     const [users, setUsers] = useState(null)
 
-    const URL = "https://drhealthbackend.onrender.com/illness"
-    const URL2 = "https://drhealthbackend.onrender.com/procedure"
+    const URL = "https://drhealthbackend.onrender.com/illness/"
+    const URL2 = "https://drhealthbackend.onrender.com/procedure/"
     const URL3 = "https://drhealthbackend.onrender.com/auth/register"
 
     const getIllnesses = async () => {
@@ -112,6 +112,7 @@ const Main = () => {
     useEffect(() => {
         getIllnesses()
         getProcedures()
+        getUsers()
     }, []);
 
 

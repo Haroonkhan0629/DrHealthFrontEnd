@@ -2,6 +2,7 @@ import { useNavigate, Link } from "react-router-dom"
 import { useState } from "react";
 
 const CreateIllness = (props) => {
+
     const navigate = useNavigate()
     const [newForm, setNewForm] = useState({
         name: "",

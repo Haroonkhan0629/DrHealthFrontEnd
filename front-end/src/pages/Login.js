@@ -1,55 +1,45 @@
-import { useNavigate, useHistory } from "react-router-dom"
-import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-const Login = (props) => {
-    const URL = "https://drhealthbackend.onrender.com/auth/logout"
-    const navigate = useNavigate()
-    const [username, setUsername] = useState("")
-    const [password, setPassword] = useState("")
-    
-    const handleLogin = async () => {
-        try {
-          const response = await fetch("https://drhealthbackend.onrender.com/auth/login", {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ username, password }),
-        });
-        console.log(response)
-      
-          if (response.ok) {
-            // Successful authentication
-            const data = await response.json();
-            console.log('Authentication successful:', data);
-          } else {
-            // Authentication failed
-            console.log('Authentication failed');
-          }
-        } catch (error) {
-          console.error('Error during authentication:', error);
-        }
-      };
-
-
+const Login = () => {
+    const navigate = useNavigate();
     const [newForm, setNewForm] = useState({
         username: "",
         password: ""
     });
 
+    const handleLogin = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await fetch("https://drhealthbackend.onrender.com/auth/login", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username: newForm.username, password: newForm.password }),
+            });
+
+            if (response.ok) {
+                // Successful authentication
+                const data = await response.json();
+                console.log('Authentication successful:', data);
+                // Store the token securely (if applicable)
+                // Redirect to another page
+                navigate("/illness");
+            } else {
+                // Authentication failed
+                console.log('Authentication failed');
+                alert("Login failed. Please check your credentials.");
+            }
+        } catch (error) {
+            console.error('Error during authentication:', error);
+            alert("An error occurred during login.");
+        }
+    };
+
     const handleChange = (event) => {
         setNewForm({ ...newForm, [event.target.name]: event.target.value })
     }
-
-    // const handleSubmit = (event) => {
-    //     event.preventDefault()
-    //     setNewForm({
-    //         username: "",
-    //         password: ""
-    //     })
-    //     navigate("/illness")
-    // }
-
 
     return (
         <div>
@@ -69,10 +59,10 @@ const Login = (props) => {
                     placeholder="Password"
                     onChange={handleChange}
                 /> <br />
-                <input type="submit" className="button" value="Login" /> <br />
+                <input type="submit" className="button" value="Login" />
             </form>
         </div>
     )
 }
 
-export default Login
+export default Login;

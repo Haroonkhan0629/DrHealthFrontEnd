@@ -21,7 +21,7 @@ body {
 
 .search-bar-container {
   padding-top: 20vh;
-  width: 100%;
+  width: 250px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -30,7 +30,7 @@ body {
 
 .input-wrapper {
   background-color: white;
-  max-width: 100%;
+  max-width: 250px;
   border-radius: 10px;
   height: 2.5rem;
   padding: 0 15px;
@@ -40,14 +40,14 @@ body {
 }
 
 .results {
-  width: 100%;
+  width: 250px;
   background-color: white;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 8px rgb(198, 197, 197);
   border-radius: 10px;
   margin-top: .25rem;
-  max-height: 200px;
+  max-height: 65px;
   overflow-y: scroll;
 }
 
@@ -97,6 +97,7 @@ body {
   align-items: center;
   list-style: none;
   margin-bottom: 50px;
+  height: 115px;
 }
 
 .nav,
@@ -117,6 +118,11 @@ body {
   text-decoration: none;
   background-color: rgb(111, 31, 31);
   color: whitesmoke;
+}
+
+.navlink,
+.navlinkheader {
+  transform: scale(1.15);
 }
 
 .nav,
@@ -213,12 +219,3 @@ h4:hover {
   margin: 100px 0px 100px 0px;
   transform: scale(2);
 }
-
-/* @media screen and (max-device-width: 600px) {
-  .media {
-    max-width: 300px;
-  }
-  .media-txt {
-    font-size: medium;
-  }
-} */
