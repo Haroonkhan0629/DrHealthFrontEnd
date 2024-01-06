@@ -47,7 +47,7 @@ body {
   box-shadow: 0px 0px 8px rgb(198, 197, 197);
   border-radius: 10px;
   margin-top: .25rem;
-  max-height: 65px;
+  max-height: 40px;
   overflow-y: scroll;
 }
 
@@ -97,7 +97,8 @@ body {
   align-items: center;
   list-style: none;
   margin-bottom: 50px;
-  height: 115px;
+  height: 80px;
+
 }
 
 .nav,
@@ -161,6 +162,7 @@ body {
 }
 
 input[type=text],
+input[type=password],
 select {
   width: 25%;
   padding: 12px 20px;
@@ -187,6 +189,10 @@ p {
 img {
   margin-top: 50px;
   margin-bottom: 50px;
+  box-shadow: 5px 5px 30px rgb(13, 13, 13);
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 10px;
 }
 
 p {
@@ -218,4 +224,12 @@ h4:hover {
 .loader {
   margin: 100px 0px 100px 0px;
   transform: scale(2);
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  .footer {
+    width: 900px;
+    text-align: center;
+    margin-top: 1500px;
+  }
 }

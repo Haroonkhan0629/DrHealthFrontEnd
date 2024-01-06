@@ -1,19 +1,17 @@
 .about-container {
-  display: flex;
+  display: center;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #E4EEFF;
 }
 
 .about-content {
   flex: 1;
   padding: 20px;
-  background-color: #E4EEFF;
-  color: #3a76e4;
+  display: center;
+  color: whitesmoke;
 }
 
 .highlight-section {
-  background-color:#E4EEFF;
   padding: 20px;
   border-radius: 8px;
   margin-top: 20px;
@@ -22,8 +20,7 @@
 .highlight-sentence {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #3a76e4;
-  background-color: #E4EEFF;
+  color: whitesmoke;
 }
 
 .highlight-number {
@@ -38,7 +35,7 @@
 .highlight-text span {
   margin-right: 10px;
   font-weight: bold;
-  color: #3a76e4;
+  color: whitesmoke;
 }
 
 .two-column-section {
@@ -48,30 +45,29 @@
 
 .column {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .picture-column img {
-  max-width: 100%;
+  max-width: 250px;
+  max-height: 250px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgb(13, 13, 13);
 }
 
 .about-column {
   padding: 20px;
-  background-color: #f8f8f8;
   border-radius: 8px;
 }
 
 .about-column h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #3a76e4;
+  color: whitesmoke;
 }
 .text-column {
   padding: 20px;
-  background-color: #E4EEFF;
   border-radius: 8px;
   text-align: left;
 }
@@ -79,9 +75,29 @@
 .text-column h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #3a76e4;
-  background-color: #E4EEFF;
+  color: whitesmoke;
 }
-.body{
-  background-color: #E4EEFF;
+
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: whitesmoke;
 }
+
+.description {
+  font-style: italic;
+  color: whitesmoke;
+  margin-top: 50px;
+}
+
+.platform-info {
+  margin-top: 25px;
+  color: whitesmoke;
+}
+
+.about-header {
+  margin-bottom: 50px;
+}
+

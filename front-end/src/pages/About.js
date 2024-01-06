@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="about-content">
-        <h1>About</h1>
+        <h1 className="about-header">About</h1>
         <div className="highlight-section">
           <p className="highlight-sentence">
             Over <span className="highlight-number">500,000</span> Americans travel to receive medical treatment each year.
@@ -52,7 +52,7 @@ const About = () => {
         <div className="two-column-section">
           <div className="column">
             <div className="picture-column">
-             <img src="https://i.imgur.com/FBkdaAk.jpg" alt="Haroon" />
+             <img src="https://i.imgur.com/vgDXdrw.png" alt="Haroon" />
             </div>
           </div>
           <div className="column">
