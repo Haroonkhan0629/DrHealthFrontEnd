@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+.about-container {
+  display: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-content {
+  flex: 1;
+  padding: 20px;
+  display: center;
+  color: whitesmoke;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.highlight-section {
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.highlight-sentence {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.highlight-number {
+  font-weight: bold;
+}
+
+.highlight-text {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.highlight-text span {
+  margin-right: 10px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.two-column-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.column {
+  flex: 1;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.picture-column img {
+  max-width: 250px;
+  max-height: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgb(13, 13, 13);
 }
+
+.about-column {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.about-column h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+.text-column {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.text-column h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.description {
+  font-style: italic;
+  color: whitesmoke;
+  margin-top: 50px;
+}
+
+.platform-info {
+  margin-top: 25px;
+  color: whitesmoke;
+}
+
+.about-header {
+  margin-bottom: 50px;
+}
+

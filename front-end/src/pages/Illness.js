@@ -1,8 +1,23 @@
-import { useParams, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useParams, Link } from "react-router-dom";
 
 const Illness = (props) => {
-    return <h1>show page</h1>
+    const params = useParams()
+    const id = params.id
+    const illnesses = props.illnesses
+    const illness = illnesses.find((illness) => illness._id === id)
+
+    return (
+        <div>
+            <h1 className="item-heading">{illness.name}</h1>
+            <div>
+                <h2>Symptoms: {illness.symptoms}</h2>
+                <p>{illness.description}</p>
+                <img src={illness.image} /> <br />
+                <Link to={`/illness/${illness._id}/edit`} className="button">Edit</Link> <br />
+                <Link to="/illness" className="button">Back</Link>
+            </div>
+        </div>
+    )
 }
 
 export default Illness
