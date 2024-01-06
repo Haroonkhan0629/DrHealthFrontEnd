@@ -4,7 +4,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 const Procedures = (props) => {
     const loaded = () => {
         return (
-            <div>
+            <div className="item-container">
                 <h1 className="item-heading">Procedures</h1>
                 <div className="items">
                     {props.procedures.map((procedure) => (

@@ -4,7 +4,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 const Illnesses = (props) => {
     const loaded = () => {
         return (
-            <div>
+            <div className="item-container">
                 <h1 className="item-heading">Illnesses</h1>
                 <div className="items">
                     {props.illnesses.map((illness) => (
