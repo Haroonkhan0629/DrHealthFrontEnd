@@ -1,9 +1,9 @@
-# Fit2Go
+# Dr. Health
 
-#### My First Full Stack Web Application
+#### Our first Team Website Application
 
 ## Description
-Fit2Go is a fitness application that gives users access to information about training and recovery. It includes various exercises and stretches along with helpful descriptions and images associated with them. There is a registration/log-in feature which allows returning members to pick up where they left off. The user can search for and save specific exercises/stretches, along with the ability to create, edit and delete them as well.
+Dr. Health is an informational website that allows 
 
 ## Table of Contents
 * [Technologies Used](#technologiesused)
@@ -19,7 +19,7 @@ Fit2Go is a fitness application that gives users access to information about tra
 * JS
 * HTML
 * CSS
-* EJS
+* REACT
 * MONGODB
 * MONGOOSE
 * NODE.JS
@@ -31,30 +31,25 @@ Fit2Go is a fitness application that gives users access to information about tra
 ## <a name="features"></a>Features
 * Users can navigate through data
 * Users can search data
-* Members can create data
-* Members can edit their own created data
-* Members can delete their own created data
-* Members cannot edit or delete other members' data
-* Members can save data
+* Users can create data
+* Users can edit data
+* Users can delete data
 
 ## <a name="sketch"></a>Whiteboard Images
-<img src="https://i.postimg.cc/KYx9Jz2q/IMG-4924.jpg" alt="Original Sketch"/> <br>
-<img src="https://i.postimg.cc/5yYp6QB0/IMG-4925.jpg" alt="Original Sketch"/> <br>
-<img src="https://i.postimg.cc/5yhgv9gm/IMG-4926.jpg" alt="Original Sketch"/>
+<img src="https://media.git.generalassemb.ly/user/49409/files/88973cf1-da62-48ad-902d-f53e5b6869dc" alt="Original Sketch"/> 
 
 ## <a name="trello"></a>Trello Planning (MVP)
-* Users can view a list of exercises and stretches on the index page
-* Users can click and are taken to the show page of the specific exercise/stretch
-* Members have ability to delete, edit, save or create new exercises/stretches
+* Users can view a list of illnesses and procedures on the index page
+* Users can click and are taken to the show page of the specific illness/procedure
+* Members have ability to delete, edit, save or create new illnesses/procedures
 
 ## <a name="nextsteps"></a>Project Next Steps
-* New Collection: Nutrition Data
-* Media Queries: Allow users to access application on smaller devices
+* User Authentication: Logged in users can only edit/delete data they created, other users cannot edit or delete your data
 
 ## <a name="deployment"></a>Project Links
 * [Application/Website](https://fit2go-gtmn.onrender.com)
-* [Trello Page](https://trello.com/b/fjhqoMlC/fit2go)
-* [Github Repo](https://github.com/Haroonkhan0629/Fit2Go)
+* [Trello Page](https://trello.com/b/4qqlnZNY/dr-health)
+* [Github Repo](https://github.com/Arlosa999/DrHealthFrontEnd)
     
 ## <a name="cited"></a>Works Cited:
 * [Stretch Images](https://www.meanmuscles.com/) 
