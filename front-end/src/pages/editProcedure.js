@@ -34,28 +34,28 @@ const EditProcedure = (props) => {
                     type="text"
                     value={editForm.name}
                     name="name"
-                    placeholder="name"
+                    placeholder="Name"
                     onChange={handleChange}
                 /> <br />
                 <input
                     type="text"
                     value={editForm.cost}
                     name="cost"
-                    placeholder="cost"
+                    placeholder="Cost"
                     onChange={handleChange}
                 /> <br />
                 <input
                     type="text"
                     value={editForm.description}
                     name="description"
-                    placeholder="description"
+                    placeholder="Description"
                     onChange={handleChange}
                 /> <br />
                 <input
                     type="text"
                     value={editForm.image}
                     name="image"
-                    placeholder="image URL"
+                    placeholder="Image URL"
                     onChange={handleChange}
                 /> <br />
                 <input type="submit" className="button" value="Update" /> <br />

@@ -10,9 +10,9 @@ const Procedure = (props) => {
         <div>
             <h1 className="item-heading">{procedure.name}</h1>
             <div>
-                {/* <h2>{procedure.cost}</h2>
-            <p>{procedure.description}</p>
-            <img src={procedure.image}/> */} <br />
+                <h2>Cost: {procedure.cost}</h2>
+                <p>{procedure.description}</p>
+                <img src={procedure.image} /> <br />
                 <Link to={`/procedure/${procedure._id}/edit`} className="button">Edit</Link> <br />
                 <Link to="/procedure" className="button">Back</Link>
             </div>

@@ -2,6 +2,7 @@ import { useNavigate, Link } from "react-router-dom"
 import { useState } from "react";
 
 const CreateIllness = (props) => {
+
     const navigate = useNavigate()
     const [newForm, setNewForm] = useState({
         name: "",
@@ -33,28 +34,28 @@ const CreateIllness = (props) => {
                     type="text"
                     value={newForm.name}
                     name="name"
-                    placeholder="name"
+                    placeholder="Name"
                     onChange={handleChange}
                 /> <br />
                 <input
                     type="text"
                     value={newForm.symptoms}
                     name="symptoms"
-                    placeholder="symptoms"
+                    placeholder="Symptoms"
                     onChange={handleChange}
                 /> <br />
                 <input
                     type="text"
                     value={newForm.description}
                     name="description"
-                    placeholder="description"
+                    placeholder="Description"
                     onChange={handleChange}
                 /> <br />
                 <input
                     type="text"
                     value={newForm.image}
                     name="image"
-                    placeholder="image URL"
+                    placeholder="Image URL"
                     onChange={handleChange}
                 /> <br />
                 <input type="submit" className="button" value="Create" /> <br/>

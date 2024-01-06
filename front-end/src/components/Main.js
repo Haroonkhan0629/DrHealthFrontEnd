@@ -16,20 +16,28 @@ import Register from "../pages/Register";
 const Main = () => {
     const [illnesses, setIllnesses] = useState(null)
     const [procedures, setProcedures] = useState(null)
+    const [users, setUsers] = useState(null)
 
-    const URL = "http://localhost:4000/people/"
-    const URL2 = "http://localhost:4000/test/"
+    const URL = "https://drhealthbackend.onrender.com/illness/"
+    const URL2 = "https://drhealthbackend.onrender.com/procedure/"
+    const URL3 = "https://drhealthbackend.onrender.com/auth/register"
 
     const getIllnesses = async () => {
-        const response = await fetch(URL);
-        const data = await response.json();
+        const response = await fetch(URL)
+        const data = await response.json()
         setIllnesses(data.data)
     }
 
     const getProcedures = async () => {
-        const response = await fetch(URL2);
-        const data = await response.json();
+        const response = await fetch(URL2)
+        const data = await response.json()
         setProcedures(data.data)
+    }
+
+    const getUsers = async () => {
+        const response = await fetch(URL3)
+        const data = await response.json()
+        setUsers(data.data)
     }
 
     const createIllness = async (illness) => {
@@ -52,6 +60,17 @@ const Main = () => {
             body: JSON.stringify(procedure)
         });
         getProcedures()
+    };
+
+    const createUser = async (user) => {
+        await fetch(URL3, {
+            method: "post",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(user)
+        });
+        getUsers()
     };
 
     const updateIllness = async (illness, id) => {
@@ -93,6 +112,7 @@ const Main = () => {
     useEffect(() => {
         getIllnesses()
         getProcedures()
+        getUsers()
     }, []);
 
 
@@ -106,7 +126,7 @@ const Main = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/auth/login" element={<Login />} />
-                <Route path="/auth/register" element={<Register />} />
+                <Route path="/auth/register" element={<Register createUser={createUser} users={users} />} />
                 <Route path="/illness/create" element={<CreateIllness illnesses={illnesses} createIllness={createIllness} />} />
                 <Route path="/procedure/create" element={<CreateProcedure procedures={procedures} createProcedure={createProcedure} />} />
                 <Route path="/illness/:id/edit" element={<EditIllness illnesses={illnesses} updateIllness={updateIllness} deleteIllness={deleteIllness} />} />

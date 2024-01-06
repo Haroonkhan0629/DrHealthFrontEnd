@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Fit2Go
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### My First Full Stack Web Application
 
-## Available Scripts
+## Description
+Fit2Go is a fitness application that gives users access to information about training and recovery. It includes various exercises and stretches along with helpful descriptions and images associated with them. There is a registration/log-in feature which allows returning members to pick up where they left off. The user can search for and save specific exercises/stretches, along with the ability to create, edit and delete them as well.
 
-In the project directory, you can run:
+## Table of Contents
+* [Technologies Used](#technologiesused)
+* [Features](#features)
+* [Whiteboard Sketch](#sketch)
+* [Trello Planning (MVP)](#trello)
+* [Project Next Steps](#nextsteps)
+* [Project Links](#deployment)
+* [Works Cited](#cited)
+* [About the Author](#author)
 
-### `npm start`
+## <a name="technologiesused"></a>Technologies Used
+* JS
+* HTML
+* CSS
+* EJS
+* MONGODB
+* MONGOOSE
+* NODE.JS
+* EXPRESS
+* EXPRESS-SESSION
+* DOTENV
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## <a name="features"></a>Features
+* Users can navigate through data
+* Users can search data
+* Members can create data
+* Members can edit their own created data
+* Members can delete their own created data
+* Members cannot edit or delete other members' data
+* Members can save data
 
-### `npm test`
+## <a name="sketch"></a>Whiteboard Images
+<img src="https://i.postimg.cc/KYx9Jz2q/IMG-4924.jpg" alt="Original Sketch"/> <br>
+<img src="https://i.postimg.cc/5yYp6QB0/IMG-4925.jpg" alt="Original Sketch"/> <br>
+<img src="https://i.postimg.cc/5yhgv9gm/IMG-4926.jpg" alt="Original Sketch"/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## <a name="trello"></a>Trello Planning (MVP)
+* Users can view a list of exercises and stretches on the index page
+* Users can click and are taken to the show page of the specific exercise/stretch
+* Members have ability to delete, edit, save or create new exercises/stretches
 
-### `npm run build`
+## <a name="nextsteps"></a>Project Next Steps
+* New Collection: Nutrition Data
+* Media Queries: Allow users to access application on smaller devices
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## <a name="deployment"></a>Project Links
+* [Application/Website](https://fit2go-gtmn.onrender.com)
+* [Trello Page](https://trello.com/b/fjhqoMlC/fit2go)
+* [Github Repo](https://github.com/Haroonkhan0629/Fit2Go)
+    
+## <a name="cited"></a>Works Cited:
+* [Stretch Images](https://www.meanmuscles.com/) 
+* [Exercise Images](https://strengthlevel.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## <a name="author"></a>About The Author
+I am a Software Engineer who loves collaborating with other creative minds to assemble complex and fun bits of code!
