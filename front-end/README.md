@@ -47,7 +47,7 @@ Dr. Health is an informational website that allows users to navigate through a v
 * User Authentication: Logged in users can only edit/delete data they created, other users cannot edit or delete your data
 
 ## <a name="deployment"></a>Project Links
-* [Application/Website](https://fit2go-gtmn.onrender.com)
+* [Application/Website](https://drhealthfrontend.netlify.app/)
 * [Trello Page](https://trello.com/b/4qqlnZNY/dr-health)
 * [Github Repo](https://github.com/Arlosa999/DrHealthFrontEnd)
     
