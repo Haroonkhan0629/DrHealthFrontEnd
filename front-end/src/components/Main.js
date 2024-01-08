@@ -124,7 +124,7 @@ const Main = () => {
                 <Route path="/illness/:id" element={<Illness illnesses={illnesses} />} />
                 <Route path="/procedure/:id" element={<Procedure procedures={procedures} />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/auth/login" element={<Login />} />
                 <Route path="/auth/register" element={<Register createUser={createUser} users={users} />} />
                 <Route path="/illness/create" element={<CreateIllness illnesses={illnesses} createIllness={createIllness} />} />
