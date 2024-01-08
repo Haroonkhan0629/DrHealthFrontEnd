@@ -20,14 +20,10 @@ const Login = () => {
             });
 
             if (response.ok) {
-                // Successful authentication
                 const data = await response.json();
                 console.log('Authentication successful:', data);
-                // Store the token securely (if applicable)
-                // Redirect to another page
                 navigate("/illness");
             } else {
-                // Authentication failed
                 console.log('Authentication failed');
                 alert("Login failed. Please check your credentials.");
             }

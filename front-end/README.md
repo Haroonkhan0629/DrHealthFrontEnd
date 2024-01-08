@@ -3,7 +3,7 @@
 #### Our first Team Website Application
 
 ## Description
-Dr. Health is an informational website that allows 
+Dr. Health is an informational website that allows users to navigate through a variety of different illnesses along with procedueres for each. This website allows for creating, updating and deleting data to stay up tp date on the current health market. Users have the ability to search through illnesses and procedures in case they cannot find what they are looking for. 
 
 ## Table of Contents
 * [Technologies Used](#technologiesused)
@@ -13,7 +13,7 @@ Dr. Health is an informational website that allows
 * [Project Next Steps](#nextsteps)
 * [Project Links](#deployment)
 * [Works Cited](#cited)
-* [About the Author](#author)
+* [About the Authors](#authors)
 
 ## <a name="technologiesused"></a>Technologies Used
 * JS
@@ -52,8 +52,10 @@ Dr. Health is an informational website that allows
 * [Github Repo](https://github.com/Arlosa999/DrHealthFrontEnd)
     
 ## <a name="cited"></a>Works Cited:
-* [Stretch Images](https://www.meanmuscles.com/) 
-* [Exercise Images](https://strengthlevel.com/)
+* N/A
 
-## <a name="author"></a>About The Author
-I am a Software Engineer who loves collaborating with other creative minds to assemble complex and fun bits of code!
+## <a name="authors"></a>About The Authors
+* Haroon Khan - Front End Manager
+* Anna Bilan - SCRUM Manager
+* Matt Herrera - Back End Manager
+* Francis Cruz - Release Manager
