@@ -44,7 +44,7 @@ Dr. Health is an informational website that allows users to navigate through a v
 * Members have ability to delete, edit, save or create new illnesses/procedures
 
 ## <a name="nextsteps"></a>Project Next Steps
-* Media Queries: Allow users to access the application on their phones/tablets
+* Media Queries: Allow users to access application on smaller devices
 
 ## <a name="deployment"></a>Project Links
 * [Application/Website](https://drhealthfrontend.netlify.app/)
