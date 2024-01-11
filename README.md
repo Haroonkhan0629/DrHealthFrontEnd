@@ -45,6 +45,7 @@ Dr. Health is an informational website that allows users to navigate through a v
 
 ## <a name="nextsteps"></a>Project Next Steps
 * User Authentication: Logged in users can only edit/delete data they created, other users cannot edit or delete your data
+* Media Queries: Allow users to access the application on their phones/tablets
 
 ## <a name="deployment"></a>Project Links
 * [Application/Website](https://drhealthfrontend.netlify.app/)
