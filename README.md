@@ -45,6 +45,7 @@ Dr. Health is an informational website that allows users to navigate through a v
 
 ## <a name="nextsteps"></a>Project Next Steps
 * Media Queries: Allow users to access application on smaller devices
+* User Login: Allow users to stay logged in once they fill out form
 
 ## <a name="deployment"></a>Project Links
 * [Application/Website](https://drhealthfrontend.netlify.app/)
