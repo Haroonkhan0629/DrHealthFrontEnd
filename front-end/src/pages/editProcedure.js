@@ -28,7 +28,7 @@ const EditProcedure = (props) => {
 
     return (
         <div>
-            <h1 className="form-heading">Change Procedure</h1>
+            <h1 className="item-heading">Change Procedure</h1>
             <form onSubmit={handleSubmit} className="editform">
                 <input
                     type="text"
@@ -60,7 +60,7 @@ const EditProcedure = (props) => {
                 /> <br />
                 <input type="submit" className="button" value="Update" /> <br />
                 <button className="button" onClick={removeProcedure}>Delete</button> <br />
-                <Link to={`/procedure/${procedure._id}`} className="button">Back</Link>
+                <Link to={`/procedure/${procedure._id}`} className="button space">Back</Link>
             </form>
         </div>
     )

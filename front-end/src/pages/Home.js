@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => {
     return (
         <div className="home-container">
-        <h1>Welcome to Dr. Health</h1>
+        <h1 className='item-heading'>Welcome to Dr. Health</h1>
         <h2 className="description">
           Dr. Health is a marketplace dedicated to educating customers about illnesses and procedures.
         </h2>

@@ -28,7 +28,7 @@ const Illnesses = (props) => {
     return (
         <section>
             {props.illnesses ? loaded() : loading()}
-            <Link to="/illness/create" className="button">Create</Link>
+            <Link to="/illness/create" className="button space">Create</Link>
         </section>
     )
 }

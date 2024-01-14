@@ -16,6 +16,8 @@ body {
   background-attachment: fixed;
   background-position: center;
   text-align: center;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -47,7 +49,7 @@ body {
   box-shadow: 0px 0px 8px rgb(198, 197, 197);
   border-radius: 10px;
   margin-top: .1rem;
-  max-height: 40px;
+  max-height: 60px;
   overflow-y: scroll;
 }
 
@@ -78,9 +80,9 @@ body {
 }
 
 .button {
-  background-color: rgb(111, 31, 31);;
+  background-color: rgb(111, 31, 31);
+  margin-top: 50px;
   padding: 5px 10px;
-  margin: 8px 0px;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -97,7 +99,11 @@ body {
   align-items: center;
   list-style: none;
   margin-bottom: 50px;
-  height: 80px;
+  height: 115px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .nav,
@@ -157,7 +163,7 @@ body {
 }
 
 .item-heading {
-  margin-bottom: 50px;
+  margin: 200px 0 50px 0;
   font-size: xx-large;
 }
 
@@ -172,11 +178,6 @@ select {
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0px 0px 8px rgb(198, 197, 197);
-}
-
-.form-heading {
-  margin-bottom: 50px;
-  color: whitesmoke;
 }
 
 .item-heading,
@@ -204,10 +205,14 @@ p {
   margin-top: 250px;
   background-color: rgb(111, 31, 31);
   color: whitesmoke;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.button {
-  margin-top: 50px;
+.space {
+  margin-bottom: 200px;
 }
 
 h4 {
@@ -225,26 +230,3 @@ h4:hover {
   transform: scale(2);
 }
 
-@media screen and (max-width: 600px) {
-  .App {
-    width: 100vw;
-  } 
-
-  .footer {
-    width: 900px;
-    text-align: center;
-    margin-top: 1500px;
-  }
-
-  .items {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); 
-    gap: 10px; 
-    margin-bottom: 10px;
-  }
-
-  .navigation {
-    width: 50vw;
-    height: 40px;
-  }
-}

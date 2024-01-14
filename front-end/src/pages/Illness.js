@@ -14,7 +14,7 @@ const Illness = (props) => {
                 <p>{illness.description}</p>
                 <img src={illness.image} /> <br />
                 <Link to={`/illness/${illness._id}/edit`} className="button">Edit</Link> <br />
-                <Link to="/illness" className="button">Back</Link>
+                <Link to="/illness" className="button space">Back</Link>
             </div>
         </div>
     )

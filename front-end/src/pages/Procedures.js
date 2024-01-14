@@ -28,7 +28,7 @@ const Procedures = (props) => {
     return (
         <section>
             {props.procedures ? loaded() : loading()}
-            <Link to="/procedure/create" className="button">Create</Link>
+            <Link to="/procedure/create" className="button space">Create</Link>
         </section>
     )
 }

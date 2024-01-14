@@ -27,7 +27,7 @@ const CreateProcedure = (props) => {
     }
     return (
         <div>
-            <h1 className="form-heading">Add Procedure</h1>
+            <h1 className="item-heading">Add Procedure</h1>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
@@ -58,7 +58,7 @@ const CreateProcedure = (props) => {
                     onChange={handleChange}
                 /> <br />
                 <input type="submit" className="button" value="Create" /> <br />
-                <Link to="/procedure" className="button">Back</Link>
+                <Link to="/procedure" className="button space">Back</Link>
             </form>
         </div>
     )

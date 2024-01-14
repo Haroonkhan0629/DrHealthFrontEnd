@@ -14,7 +14,7 @@ const Procedure = (props) => {
                 <p>{procedure.description}</p>
                 <img src={procedure.image} /> <br />
                 <Link to={`/procedure/${procedure._id}/edit`} className="button">Edit</Link> <br />
-                <Link to="/procedure" className="button">Back</Link>
+                <Link to="/procedure" className="button space">Back</Link>
             </div>
         </div>
     )

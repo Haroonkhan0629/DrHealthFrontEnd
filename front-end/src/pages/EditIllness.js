@@ -28,7 +28,7 @@ const EditIllness = (props) => {
 
     return (
         <div>
-            <h1 className="form-heading">Change Illness</h1>
+            <h1 className="item-heading">Change Illness</h1>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
@@ -60,7 +60,7 @@ const EditIllness = (props) => {
                 /> <br />
                 <input type="submit" className="button" value="Update" /> <br />
                 <button className="button" onClick={removeIllness}>Delete</button> <br />
-                <Link to={`/illness/${illness._id}`} className="button">Back</Link>
+                <Link to={`/illness/${illness._id}`} className="button space">Back</Link>
             </form>
         </div>
     )
