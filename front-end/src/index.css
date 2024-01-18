@@ -226,7 +226,7 @@ h4:hover {
 }
 
 .loader {
-  margin: 100px 0px 100px 0px;
+  margin: 250px 0px 100px 0px;
   transform: scale(2);
 }
 
