@@ -50,7 +50,7 @@ Dr. Health is an informational website that allows users to navigate through a v
 ## <a name="deployment"></a>Project Links
 * [Application/Website](https://drhealthfrontend.netlify.app/)
 * [Trello Page](https://trello.com/b/4qqlnZNY/dr-health)
-* [Github Repo](https://github.com/Haroonkhan0629/DrHealthFrontEnd/tree/main)
+* [Github Repo](https://cerulean-puppy-08071b.netlify.app)
     
 ## <a name="cited"></a>Works Cited:
 * N/A
