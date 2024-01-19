@@ -209,19 +209,20 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
+  height: 125px;
 }
 
 .space {
   margin-bottom: 200px;
 }
 
-h4 {
+h5 {
   color: whitesmoke;
   text-decoration: none;
   margin-top: 10px;
 }
 
-h4:hover {
+h5:hover {
   text-decoration: underline;
 }
 
